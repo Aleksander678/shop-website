@@ -1,5 +1,4 @@
-import Image from "next/image";
-import { FaArrowRight } from "react-icons/fa";
+
 import ProductCard from "./ProductCard"
 import OfferCard from "./OfferCard";
 

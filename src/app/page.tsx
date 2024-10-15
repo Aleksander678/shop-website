@@ -11,12 +11,14 @@ import paintingImg from "./painting.jpg"
 import mouseImg from "./mouse.webp"
 import booksImg from "./books.jpg"
 import ratingImg from "./rating.webp"
+import mugImg from "./mug.jpg"
+import lampImg from "./lamp.webp"
 
 export default function Home() {
   return (
     <main>
       <div className="flex items-center justify-between">
-        <h1 className="text-3xl bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary font-extrabold m-5 ml-8 w-6/12">Welcome! <br/>How are you today?</h1> 
+        <h1 className="text-5xl bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary font-extrabold m-5 ml-20 w-6/12">Welcome! <br/>How are you today?</h1> 
         <div className="carousel carousel-vertical rounded-box h-96 shadow-lg">
           <div className="carousel-item h-full">
             <OfferCard image={autumnImg} title="Autumn sale!"/>
@@ -36,14 +38,20 @@ export default function Home() {
         <ProductCard image={sunglassesImg} title="Sunglasses" badge="" price="15.99 zł" categories={["accesories", "summer"]}/>
         <ProductCard image={paintingImg} title="Painting - japanese landscape" badge="new" price="49.99 zł" categories={["art", "decoration"]}/>
         <ProductCard image={mouseImg} title="Wireless mouse" badge="30% off" price="89.99 zł" categories={["electronics", "gadgets"]}/>
+        <ProductCard image={mugImg} title="Red mug" badge="30% off" price="4.99 zł" categories={["home", "kitchen"]}/>
+        <ProductCard image={lampImg} title="Desk lamp" badge="2 for 1!" price="29.99 zł" categories={["home", "office"]}/>
       </div>
       <div className="divider"></div>
       <h1 className="font-extrabold text-2xl m-3">Popular</h1>
       <div className="flex flex-wrap">
+        <ProductCard image={lampImg} title="Desk lamp" badge="2 for 1!" price="29.99 zł" categories={["home", "office"]}/>
         <ProductCard image={basketballImg} title="Basketball" badge="new" price="29.99 zł" categories={["sport", "games"]}/>
-        <ProductCard image={sunglassesImg} title="Sunglasses" badge="" price="15.99 zł" categories={["accesories", "summer"]}/>
         <ProductCard image={paintingImg} title="Painting - japanese landscape" badge="new" price="49.99 zł" categories={["art", "decoration"]}/>
+        <ProductCard image={mugImg} title="Red mug" badge="30% off" price="4.99 zł" categories={["home", "kitchen"]}/>
         <ProductCard image={mouseImg} title="Wireless mouse" badge="30% off" price="89.99 zł" categories={["electronics", "gadgets"]}/>
+        <ProductCard image={sunglassesImg} title="Sunglasses" badge="" price="15.99 zł" categories={["accesories", "summer"]}/>
+        
+        
       </div>
       
     </main>

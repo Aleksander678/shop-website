@@ -23,8 +23,8 @@ const ProductCard = ({image, title, badge, price, categories}:ProductCardProps) 
     </h2>
     <p>{price}</p>
     <div className="card-actions justify-end">
-      <div className="badge badge-outline cursor-pointer transition ease-in-out duration-200 hover:bg-primary ">{categories[0]}</div>
-      <div className="badge badge-outline cursor-pointer transition ease-in-out duration-200 hover:bg-primary">{categories[1]}</div>
+      {categories[0]=="" ? <></> : <div className="badge badge-outline cursor-pointer transition ease-in-out duration-200 hover:bg-primary ">{categories[0]}</div>}
+      {categories[1]=="" ? <></> : <div className="badge badge-outline cursor-pointer transition ease-in-out duration-200 hover:bg-primary">{categories[1]}</div>}
     </div>
   </div>
 </div>
